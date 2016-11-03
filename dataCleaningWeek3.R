@@ -1,0 +1,6 @@
+download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv","data/ACSCommunityData.csv")
+ACS <- fread("data/ACSCommunityData.csv")
+which(ACS$ACR == 3 & ACS$AGS == 6)
+download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fjeff.jpg","data/instructorReading.jpg")
+jpeg::readJPEG("data/instructorReading.jpg",native = TRUE)
+quantile(jpegData,)
